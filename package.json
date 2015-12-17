@@ -1,0 +1,26 @@
+{
+  "name": "cputoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rainvg/cputoken.git"
+  },
+  "keywords": [
+    "rainvg",
+    "cputoken"
+  ],
+  "author": "rainvg (https://github.com/rainvg/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rainvg/cputoken/issues"
+  },
+  "homepage": "https://github.com/rainvg/cputoken#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}

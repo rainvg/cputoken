@@ -22,5 +22,11 @@
   "homepage": "https://github.com/rainvg/cputoken#readme",
   "devDependencies": {
     "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "bitwise-xor": "0.0.0",
+    "cluster": "^0.7.7",
+    "crypto": "0.0.3",
+    "secure-random": "^1.1.1"
   }
 }

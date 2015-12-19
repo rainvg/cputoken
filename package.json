@@ -4,8 +4,7 @@
   "description": "",
   "main": "main.js",
   "files": [
-    "functions.js",
-    "worker.js"
+    "dependencies/"
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/main.js"
@@ -30,6 +29,8 @@
   "dependencies": {
     "bitwise-xor": "0.0.0",
     "crypto": "0.0.3",
-    "secure-random": "^1.1.1"
+    "secure-random": "^1.1.1",
+    "functions": "./dependencies/functions",
+    "cpuworker": "./dependencies/cpuworker"
   }
 }

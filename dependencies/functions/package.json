@@ -1,0 +1,16 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rainvg",
+    "cputoken",
+    "functions"
+  ],
+  "author": "rainvg (https://github.com/rainvg/)",
+  "license": "MIT"
+}

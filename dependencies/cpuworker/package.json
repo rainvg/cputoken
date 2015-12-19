@@ -12,8 +12,5 @@
     "cpuworker"
   ],
   "author": "rainvg (https://github.com/rainvg/)",
-  "license": "MIT",
-  "dependencies": {
-    "functions": "../functions"
-  }
+  "license": "MIT"
 }

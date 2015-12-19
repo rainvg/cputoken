@@ -2,7 +2,7 @@
 
 var child_process = require("child_process");
 
-var functions = require("functions");
+var functions = require("./dependencies/functions");
 
 var token = function(message, bits)
 {

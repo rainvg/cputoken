@@ -8,7 +8,7 @@ var token = function(message, bits)
 {
   return new Promise(function(resolve, reject)
   {
-    var worker = child_process.fork("./dependencies/cpuworker");
+    var worker = child_process.fork(__dirname + "/dependencies/cpuworker");
     worker.send({message: message, bits: bits});
       worker.on("message", function(message)
       {

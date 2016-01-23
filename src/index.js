@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var child_process = require("child_process");
 
@@ -6,7 +6,7 @@ var functions = require("./dependencies/functions");
 
 var token = function(message, bits)
 {
-  return new Promise(function(resolve, reject)
+  return new Promise(function(resolve)
   {
     var worker = child_process.fork(__dirname + "/dependencies/cpuworker");
     worker.send({message: message, bits: bits});
@@ -15,7 +15,7 @@ var token = function(message, bits)
         resolve(message.token);
       });
   });
-}
+};
 
 var check = function(message, token, bits)
 {

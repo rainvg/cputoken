@@ -1,4 +1,4 @@
-var functions = require('../functions');
+var functions = require('./functions.js');
 
 process.on('message', function(message)
 {

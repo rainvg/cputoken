@@ -2,13 +2,13 @@
 
 var child_process = require('child_process');
 
-var functions = require('./dependencies/functions');
+var functions = require('./functions.js');
 
 var token = function(message, bits)
 {
   return new Promise(function(resolve)
   {
-    var worker = child_process.fork(__dirname + '/dependencies/cpuworker');
+    var worker = child_process.fork(__dirname + '/cpuworker.js');
     worker.send({message: message, bits: bits});
       worker.on('message', function(message)
       {

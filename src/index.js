@@ -1,16 +1,16 @@
 'use strict';
 
-var child_process = require("child_process");
+var child_process = require('child_process');
 
-var functions = require("./dependencies/functions");
+var functions = require('./dependencies/functions');
 
 var token = function(message, bits)
 {
   return new Promise(function(resolve)
   {
-    var worker = child_process.fork(__dirname + "/dependencies/cpuworker");
+    var worker = child_process.fork(__dirname + '/dependencies/cpuworker');
     worker.send({message: message, bits: bits});
-      worker.on("message", function(message)
+      worker.on('message', function(message)
       {
         resolve(message.token);
       });
@@ -19,7 +19,7 @@ var token = function(message, bits)
 
 var check = function(message, token, bits)
 {
-  return functions.bitcmp(functions.sha256(message), functions.sha256(new Buffer(token, "hex")), bits);
+  return functions.bitcmp(functions.sha256(message), functions.sha256(new Buffer(token, 'hex')), bits);
 };
 
 module.exports = {

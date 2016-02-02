@@ -1,6 +1,6 @@
-var crypto = require("crypto");
-var securerandom = require("secure-random");
-var xor = require("bitwise-xor");
+var crypto = require('crypto');
+var securerandom = require('secure-random');
+var xor = require('bitwise-xor');
 
 var __bitmask = [];
 
@@ -31,7 +31,7 @@ function bitcmp(reference, digest, bits)
 
 function sha256(data)
 {
-  var sha256 = crypto.createHash("sha256");
+  var sha256 = crypto.createHash('sha256');
   sha256.update(data);
   return sha256.digest();
 }
@@ -44,7 +44,7 @@ function search(message, bits)
   {
     var token = securerandom.randomBuffer(32);
     if(bitcmp(reference, sha256(token), bits))
-      return token.toString("hex");
+      return token.toString('hex');
   }
 }
 

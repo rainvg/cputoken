@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Cputoken module for rain project",
   "main": "dist/index.min.js",
-  "files": [
-    "src/dependencies/"
-  ],
   "scripts": {
     "test": "./node_modules/.bin/mocha test/index.js",
     "lint": "gulp lint",
